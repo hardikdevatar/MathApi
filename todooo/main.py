@@ -12,7 +12,7 @@ import numpy as np
 Base.metadata.create_all(engine)
 
 # Initialize app
-app = FastAPI()
+app = FastAPI(title="Math Api", version="0.0.1")
 
 # Helper function to get database session
 def get_session():
